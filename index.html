@@ -4,8 +4,20 @@
 <title>MagicPad Store - 3 Produk</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body { font-family: Arial; background: #f5f5f5; text-align: center; }
-h1 { color: #333; }
+html, body { 
+  margin: 0; 
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body { 
+  font-family: Arial; 
+  background: #f5f5f5; 
+  text-align: center; 
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+h1 { color: #333; margin-top: 20px; }
 .container { 
     display: flex; 
     gap: 20px; 
@@ -20,7 +32,7 @@ h1 { color: #333; }
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-.card img { width: 100%; border-radius: 10px; }
+.card img { width: 100%; border-radius: 10px; height: 280px; object-fit: cover; }
 .btn {
     display: block;
     background: #25D366;
@@ -40,15 +52,13 @@ h1 { color: #333; }
 
 <div class="container">
 
-    <!-- PRODUK 1 -->
     <div class="card">
-        <img src="magicpad1.jpg">
+        <img src="magicpad2.jpg">
         <h2>MagicPad Pro 13"</h2>
         <p>Harga: <b style="color: #d63384;">RM3,299</b></p>
-        <a class="btn" href="https://wa.me/60174321622?text=Nak%20order%20MagicPad%20Pro%2013">BELI SEKARANG</a>
+        <a class="btn" href="https://wa.me/60174321622?text=Nak%20order%20MagicPad%20Pro">BELI SEKARANG</a>
     </div>
 
-    <!-- PRODUK 2 -->
     <div class="card">
         <img src="magicpad2.jpg">
         <h2>MagicPad 3 11"</h2>
@@ -56,9 +66,8 @@ h1 { color: #333; }
         <a class="btn" href="https://wa.me/60174321622?text=Nak%20order%20MagicPad%203">BELI SEKARANG</a>
     </div>
 
-    <!-- PRODUK 3 -->
     <div class="card">
-        <img src="magicpad1.jpg">
+        <img src="magicpad2.jpg">
         <h2>MagicPad Lite 10"</h2>
         <p>Harga: <b style="color: #d63384;">RM1,999</b></p>
         <a class="btn" href="https://wa.me/60174321622?text=Nak%20order%20MagicPad%20Lite">BELI SEKARANG</a>

@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MagicPad Store</title>
+<title>MagicPad Store - Official</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body { font-family: Arial; background: #f5f5f5; text-align: center; padding: 20px; margin:0; }
-.container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+body { font-family: Arial; background: #f5f5f5; margin:0; text-align:center; }
+
+/* HEADER BARU */
+.header {
+  background: black;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header b { font-size: 20px; }
+.header a { color: white; text-decoration: none; margin-left: 15px; font-size: 14px;}
+
+/* BANNER BARU */
+.banner {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 50px 20px;
+}
+.banner h1 { font-size: 32px; margin:0; }
+.banner p { font-size: 18px; }
+.banner-btn {
+  background: white;
+  color: #764ba2;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; padding: 20px; }
 .card { background: white; width: 280px; border-radius: 15px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 .card img { width: 100%; border-radius: 10px; }
 .btn { display:block; background:#25D366; color:white; padding:12px; margin-top:10px; text-decoration:none; border-radius:8px; font-weight:bold; }
+h2 { font-size: 18px; }
 </style>
 </head>
 <body>
-<h1>🔥 MagicPad Store 🔥</h1>
-<p>Pilih model idaman anda</p>
+
+<!-- HEADER -->
+<div class="header">
+  <b>🔥 MagicPad</b>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Produk</a>
+    <a href="https://wa.me/60174321622">Contact</a>
+  </div>
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+  <h1>Tablet No.1 Paling Laku 2026</h1>
+  <p>165Hz 3K OLED Display | Battery Tahan 2 Hari</p>
+  <a class="banner-btn" href="https://wa.me/60174321622?text=Nak%20tanya%20MagicPad">WhatsApp Sekarang</a>
+</div>
+
+<!-- PRODUK 3 BIJI KEKAL SAMA -->
+<h2 style="margin-top:30px;">🔥 Pilih Model Idaman Anda 🔥</h2>
 <div class="container">
 <div class="card">
 <img src="magicpad2.jpg">
@@ -34,5 +85,6 @@ body { font-family: Arial; background: #f5f5f5; text-align: center; padding: 20p
 <a class="btn" href="https://wa.me/60174321622">BELI SEKARANG</a>
 </div>
 </div>
+
 </body>
 </html>

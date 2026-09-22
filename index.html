@@ -10,7 +10,6 @@ body { font-family: Arial; background: #f5f5f5; margin:0; text-align:center; }
 .header a { color: white; text-decoration: none; margin-left: 15px; font-size: 14px;}
 .banner { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 50px 20px; }
 .banner h1 { font-size: 32px; margin:0; }
-.banner p { font-size: 18px; }
 .banner-btn { background: white; color: #764ba2; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; }
 .container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; padding: 20px; }
 .card { background: white; width: 280px; border-radius: 15px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative; overflow: hidden; }
@@ -19,8 +18,32 @@ body { font-family: Arial; background: #f5f5f5; margin:0; text-align:center; }
 .old-price { text-decoration: line-through; color: grey; font-size: 14px; }
 .new-price { color: #d63384; font-size: 20px; font-weight: bold; }
 .badge { position: absolute; top: 15px; left: -30px; background: red; color: white; padding: 5px 35px; transform: rotate(-45deg); font-size: 12px; font-weight: bold; }
+
+/* TESTIMONI BARU */
+.review-section { background: white; padding: 30px 20px; margin-top: 20px; }
+.review-box { background: #f9f9f9; border-left: 4px solid #25D366; padding: 15px; margin: 10px auto; max-width: 500px; text-align: left; border-radius: 8px; }
+
 .footer { background: black; color: white; padding: 30px 20px; margin-top: 40px; font-size: 14px; }
 .footer a { color: #25D366; text-decoration: none; }
+
+/* WHATSAPP MELAYANG BARU */
+.float-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 999;
+}
 </style>
 </head>
 <body>
@@ -29,7 +52,7 @@ body { font-family: Arial; background: #f5f5f5; margin:0; text-align:center; }
   <b>🔥 MagicPad</b>
   <div>
     <a href="#">Home</a>
-    <a href="#">Produk</a>
+    <a href="#produk">Produk</a>
     <a href="https://wa.me/60174321622">Contact</a>
   </div>
 </div>
@@ -40,42 +63,57 @@ body { font-family: Arial; background: #f5f5f5; margin:0; text-align:center; }
   <a class="banner-btn" href="https://wa.me/60174321622?text=Nak%20tanya%20MagicPad">WhatsApp Sekarang</a>
 </div>
 
-<h2 style="margin-top:30px;">🔥 Pilih Model Idaman Anda 🔥</h2>
+<h2 id="produk" style="margin-top:30px;">🔥 Pilih Model Idaman Anda 🔥</h2>
 
 <div class="container">
-
 <div class="card">
 <img src="magicpad2.jpg">
 <h2>MagicPad Pro 13"</h2>
 <p><span class="old-price">RM4,599</span> <br> <span class="new-price">RM3,299</span></p>
-<a class="btn" href="https://wa.me/60174321622?text=Nak%20order%20MagicPad%20Pro">BELI SEKARANG</a>
+<a class="btn" href="https://wa.me/60174321622">BELI SEKARANG</a>
 </div>
-
 <div class="card">
 <div class="badge">BEST SELLER</div>
 <img src="magicpad2.jpg">
 <h2>MagicPad 3 11"</h2>
 <p><span class="old-price">RM3,999</span> <br> <span class="new-price">RM2,899</span></p>
-<a class="btn" style="background:red;" href="https://wa.me/60174321622?text=Nak%20order%20MagicPad%203%20BEST%20SELLER">🔥 BELI BEST SELLER</a>
+<a class="btn" style="background:red;" href="https://wa.me/60174321622">🔥 BELI BEST SELLER</a>
 </div>
-
 <div class="card">
 <img src="magicpad2.jpg">
 <h2>MagicPad Lite 10"</h2>
 <p><span class="old-price">RM2,799</span> <br> <span class="new-price">RM1,999</span></p>
-<a class="btn" href="https://wa.me/60174321622?text=Nak%20order%20MagicPad%20Lite">BELI SEKARANG</a>
+<a class="btn" href="https://wa.me/60174321622">BELI SEKARANG</a>
+</div>
 </div>
 
+<!-- REVIEW BARU DAY 13 -->
+<div class="review-section">
+  <h2>⭐ Apa Kata Customer Kami ⭐</h2>
+  <div class="review-box">
+    <b>Ahmad - Shah Alam</b> ⭐⭐⭐⭐⭐<br>
+    "Padu gila tablet ni, bateri tahan lama, screen lawa!"
+  </div>
+  <div class="review-box">
+    <b>Sarah - KL</b> ⭐⭐⭐⭐⭐<br>
+    "Seller trusted, COD terus depan rumah. Recommended!"
+  </div>
+  <div class="review-box">
+    <b>Faiz - Johor</b> ⭐⭐⭐⭐⭐<br>
+    "Best seller tu memang berbaloi, smooth gila buat kerja."
+  </div>
 </div>
 
-<!-- FOOTER BARU -->
 <div class="footer">
   <b>🔥 MagicPad Store - Shah Alam</b><br><br>
   COD Shah Alam | Postage Seluruh Malaysia<br>
   Warranty 1 Tahun | Trusted Seller Since 2023<br><br>
   <a href="https://wa.me/60174321622">Chat WhatsApp: 017-4321622</a><br><br>
-  © 2026 MagicPad Store. All Rights Reserved.
+  © 2026 MagicPad Store.
 </div>
+
+<!-- BUTTON MELAYANG -->
+<a class="float-wa" href="https://wa.me/60174321622?text=Hi%20boss%20nak%20tanya%20MagicPad">💬</a>
 
 </body>
 </html>

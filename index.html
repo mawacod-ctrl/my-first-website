@@ -62,13 +62,13 @@ body { font-family: Arial; background: #f5f5f5; margin:0; text-align:center; }
 <img src="magicpad2.jpg">
 <h2>MagicPad 3 11"</h2>
 <p><span class="old-price">RM3,999</span> <br> <span class="new-price">RM2,899</span></p>
-<a class="btn" style="background:red;" href="https://wa.me/60174321622">🔥 BELI BEST SELLER</a>
+<button onclick="orderSekarang('MagicPad 3 11 inci - BEST SELLER')">🔥 BELI BEST SELLER</button>
 </div>
 <div class="card">
 <img src="magicpad2.jpg">
 <h2>MagicPad Lite 10"</h2>
 <p><span class="old-price">RM2,799</span> <br> <span class="new-price">RM1,999</span></p>
-<button onclick="orderSekarang('Tablet No.1 Paling Laku')">Beli Sekarang</button>
+<button onclick="orderSekarang('MagicPad Lite 10 inci')">Beli Sekarang</button>
 </div>
 </div>
 
@@ -107,6 +107,13 @@ setInterval(function(){
 function orderSekarang(namaProduk) {
   var noPhone = "60174321622"; 
   var mesej = "Bos MAWA! Saya nak order " + namaProduk + ". Ada stok lagi tak?";
+  window.open("https://wa.me/" + noPhone + "?text=" + encodeURIComponent(mesej), '_blank');
+}
+</script>
+  <script>
+function orderSekarang(namaProduk) {
+  var noPhone = "60174321622";
+  var mesej = "Bos MAWA! Saya nak order " + namaProduk + " - Saya tengok dari website MagicPad Store";
   window.open("https://wa.me/" + noPhone + "?text=" + encodeURIComponent(mesej), '_blank');
 }
 </script>

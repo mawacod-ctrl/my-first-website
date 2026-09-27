@@ -103,3 +103,11 @@ setInterval(function(){
 
 </body>
 </html>
+<script>
+function orderSekarang(namaProduk) {
+  var noPhone = "60123456789"; 
+  var mesej = "Bos MAWA! Saya nak order " + namaProduk + ". Ada stok lagi tak?";
+  window.open("https://wa.me/" + noPhone + "?text=" + encodeURIComponent(mesej), '_blank');
+}
+</script>
+</body>
